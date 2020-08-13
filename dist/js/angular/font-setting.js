@@ -470,9 +470,16 @@
   angular.module("risevision.widget.common.font-setting")
     .factory("googleFontLoader", ["$http", "angularLoad", function($http, angularLoad) {
 
-    var fontsApi = "https://www.googleapis.com/webfonts/v1/webfonts?key=AIzaSyBXxVK_IOV7LNQMuVVo_l7ZvN53ejN86zY",
+    var fontsApi =
+        "https://www.googleapis.com/webfonts/v1/webfonts?key=AIzaSyA-gV-iL8PF5w6lkWNWM2tolkEmIEhMbtQ",
       fontBaseUrl = "//fonts.googleapis.com/css?family=",
-      exclude = ["Buda", "Coda Caption", "Open Sans Condensed", "UnifrakturCook", "Molle"],
+      exclude = [
+        "Buda",
+        "Coda Caption",
+        "Open Sans Condensed",
+        "UnifrakturCook",
+        "Molle",
+      ],
       fallback = ",sans-serif;",
       factory = {};
 
