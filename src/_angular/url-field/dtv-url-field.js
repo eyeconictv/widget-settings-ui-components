@@ -89,6 +89,8 @@
 
           scope.invalidType = "url";
 
+          scope.selectionType = scope.storageType === "single-file" ? "file" : "folder";
+
           scope.allowInitEmpty = (typeof attrs.initEmpty !== "undefined");
 
           if (!scope.hideStorage) {
