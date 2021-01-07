@@ -96,6 +96,7 @@
           if (!scope.hideStorage) {
             scope.$on("picked", function (event, data) {
               scope.url = data[0];
+              scope.$digest();
             });
           }
 
