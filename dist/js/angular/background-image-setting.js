@@ -132,6 +132,7 @@ module.run(["$templateCache", function($templateCache) {
     "  <!-- Image URL -->\n" +
     "  <url-field id=\"backgroundImageUrl\" url=\"background.image.url\"\n" +
     "             file-type=\"image\"\n" +
+    "             storage-type=\"single-file\"\n" +
     "             hide-label=\"true\"\n" +
     "             company-id=\"{{companyId}}\"\n" +
     "             ng-model=\"urlentry\" valid></url-field>\n" +
