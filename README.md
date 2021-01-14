@@ -23,6 +23,12 @@ Widget Settings UI Components works in conjunction with [Rise Vision](http://www
 
 At this time Chrome is the only browser that this project and Rise Vision supports.
 
+### Built With
+- *NPM*
+- *Node (8.10.0)*
+- *AngularJS*
+- *Gulp*
+
 ## Built With
 - NPM (node package manager)
 - Angularjs
