@@ -1,6 +1,6 @@
 {
   "name": "widget-settings-ui-components",
-  "version": "4.0.12",
+  "version": "4.0.13",
   "description": "Various UI components shared across Angular-based widget settings",
   "main": "gulpfile.js",
   "scripts": {
