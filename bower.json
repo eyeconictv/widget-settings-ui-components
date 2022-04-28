@@ -1,7 +1,7 @@
 {
   "name": "widget-settings-ui-components",
   "version": "3.5.0",
-  "homepage": "https://github.com/Rise-Vision/widget-settings-ui-components",
+  "homepage": "https://github.com/porcupine-plan/widget-settings-ui-components",
   "authors": [
     "Rise Vision"
   ],
@@ -30,12 +30,12 @@
     "angular-bootstrap-slider": "~0.0.6",
     "angular-load": "~0.4.1",
     "angular-ui-tinymce": "0.0.18",
-    "bootstrap-form-components": "https://github.com/Rise-Vision/bootstrap-form-components.git",
+    "bootstrap-form-components": "https://github.com/porcupine-plan/bootstrap-form-components.git",
     "bootstrap-sass-official": "~3.2.0",
-    "component-storage-selector": "https://github.com/Rise-Vision/component-storage-selector.git",
-    "common-header": "https://github.com/Rise-Vision/common-header.git",
-    "rv-angular-bootstrap-colorpicker": "https://github.com/Rise-Vision/angular-bootstrap-colorpicker.git",
-    "spectrum": "https://github.com/Rise-Vision/spectrum.git"
+    "component-storage-selector": "https://github.com/porcupine-plan/component-storage-selector.git",
+    "common-header": "https://github.com/porcupine-plan/common-header.git",
+    "rv-angular-bootstrap-colorpicker": "https://github.com/porcupine-plan/angular-bootstrap-colorpicker.git",
+    "spectrum": "https://github.com/porcupine-plan/spectrum.git"
   },
   "resolutions": {
     "angular": "~1.5.0",
