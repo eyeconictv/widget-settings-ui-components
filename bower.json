@@ -40,7 +40,7 @@
   },
   "resolutions": {
     "angular": "~1.3.0",
-    "rv-common-style": "1.2.3",
+    "rv-common-style": "2.2.3",
     "jquery": "1.11.0",
     "angular-bootstrap": "^0.13.0",
     "angular-translate-loader-static-files": "~2.18.1",
