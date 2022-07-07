@@ -1,6 +1,6 @@
 {
   "name": "widget-settings-ui-components",
-  "version": "3.0.5",
+  "version": "3.0.6",
   "description": "Various UI components shared across Angular-based widget settings",
   "main": "gulpfile.js",
   "scripts": {
@@ -35,7 +35,7 @@
     "gulp-bump": "~0.1.8",
     "gulp-concat": "^2.2.0",
     "gulp-html2js": "^0.2.0",
-    "gulp-html2string": "git://github.com/porcupine-plan/gulp-html2string",
+    "gulp-html2string": "https://github.com/porcupine-plan/gulp-html2string",
     "gulp-jshint": "~1.5.5",
     "gulp-rename": "~1.2.0",
     "run-sequence": "^0.3.2",

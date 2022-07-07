@@ -152,7 +152,7 @@ module.run(["$templateCache", function($templateCache) {
     "  <label ng-if=\"!hideLabel\">{{ \"url.label\" | translate }}</label>\n" +
     "  <div ng-class=\"{'input-group':!hideStorage}\">\n" +
     "    <input name=\"url\" type=\"text\" ng-model=\"url\" ng-blur=\"blur()\" class=\"form-control\" placeholder=\"http://\">\n" +
-    "    <span class=\"input-url-addon\" ng-if=\"!hideStorage\"><storage-selector company-id=\"{{companyId}}\" type=\"{{storageType}}\"></storage-selector></span>\n" +
+    "    <span class=\"input-url-addon\" ng-if=\"!hideStorage\"><storage-selector company-id=\"{{companyId}}\" type=\"{{storageType}}\" selection-type=\"file\"></storage-selector></span>\n" +
     "  </div>\n" +
     "  <p ng-if=\"!valid && invalidType === 'url'\" class=\"text-danger\">{{ \"url.errors.url\" | translate }}</p>\n" +
     "  <p ng-if=\"!valid && invalidType === 'image'\" class=\"text-danger\">{{ \"url.errors.image\" | translate }}</p>\n" +
