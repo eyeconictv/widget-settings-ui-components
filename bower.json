@@ -32,7 +32,7 @@
     "angular-bootstrap-slider": "~0.0.6",
     "rv-angular-bootstrap-colorpicker": "https://github.com/porcupine-plan/angular-bootstrap-colorpicker.git",
     "rv-common-style": "https://github.com/porcupine-plan/common-style.git",
-    "component-storage-selector": "https://github.com/porcupine-plan/component-storage-selector.git#3.0.15",
+    "component-storage-selector": "https://github.com/porcupine-plan/component-storage-selector.git#3.0.16",
     "bootstrap-sass-official": "~3.2.0",
     "bootstrap-form-components": "https://github.com/porcupine-plan/bootstrap-form-components.git",
     "spectrum": "https://github.com/porcupine-plan/spectrum.git",
