@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/porcupine-plan/widget-settings-ui-components.git"
+    "url": "https://github.com/eyeconictv/widget-settings-ui-components.git"
   },
   "contributors": [
     "Alex Deaconu",
@@ -21,7 +21,7 @@
   ],
   "license": "GPLv3",
   "bugs": {
-    "url": "https://github.com/porcupine-plan/widget-settings-ui-components/issues"
+    "url": "https://github.com/eyeconictv/widget-settings-ui-components/issues"
   },
   "dependencies": {
     "bower": "^1.5.3"
@@ -40,7 +40,7 @@
     "gulp-concat": "^2.2.0",
     "gulp-gh-pages": "0.5.4",
     "gulp-html2js": "^0.2.0",
-    "gulp-html2string": "git://github.com/porcupine-plan/gulp-html2string",
+    "gulp-html2string": "git://github.com/eyeconictv/gulp-html2string",
     "gulp-jshint": "~1.5.5",
     "gulp-rename": "~1.2.0",
     "gulp-uglify": "^0.3.1",
@@ -51,8 +51,7 @@
     "lodash": "^4.17.5",
     "minimist": "1.1.0",
     "run-sequence": "^0.3.2",
-    "uglify-js": "^2.6.0",
-    "widget-tester": "git://github.com/porcupine-plan/widget-tester.git#2.7.3"
+    "uglify-js": "^2.6.0"
   },
-  "homepage": "https://github.com/porcupine-plan/widget-settings-ui-components"
+  "homepage": "https://github.com/eyeconictv/widget-settings-ui-components"
 }
