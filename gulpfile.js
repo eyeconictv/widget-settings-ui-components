@@ -14,7 +14,7 @@
   var es = require("event-stream");
   var jshint = require("gulp-jshint");
   var uglify = require("gulp-uglify");
-  var factory = require("widget-tester").gulpTaskFactory;
+  // var factory = require("widget-tester").gulpTaskFactory;
   var bower = require("gulp-bower");
   var del = require("del");
   var colors = require("colors");
@@ -131,17 +131,17 @@
       .pipe(gulp.dest("dist/js"));
   });
 
-  gulp.task("webdriver_update", factory.webdriveUpdate());
+  // gulp.task("webdriver_update", factory.webdriveUpdate());
 
   // ***** e2e Testing ***** //
 
-  gulp.task("e2e:server", ["config"], factory.testServer());
-  gulp.task("e2e:server-close", factory.testServerClose());
+  // gulp.task("e2e:server", ["config"], factory.testServer());
+  // gulp.task("e2e:server-close", factory.testServerClose());
 
-  gulp.task("e2e:test", factory.testE2E());
-  gulp.task("e2e:test-ng", ["webdriver_update"], factory.testE2EAngular({
-    src: ["test/e2e/angular/*test-ng.js"]
-  }));
+  // gulp.task("e2e:test", factory.testE2E());
+  // gulp.task("e2e:test-ng", ["webdriver_update"], factory.testE2EAngular({
+  //   src: ["test/e2e/angular/*test-ng.js"]
+  // }));
 
   // ***** Primary Tasks ***** //
   gulp.task("bower-clean-install", ["clean-bower"], function(cb){

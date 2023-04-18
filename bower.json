@@ -1,7 +1,7 @@
 {
   "name": "widget-settings-ui-components",
-  "version": "1.0.4",
-  "homepage": "https://github.com/porcupine-plan/widget-settings-ui-components",
+  "version": "4.0.16",
+  "homepage": "https://github.com/eyeconictv/widget-settings-ui-components",
   "authors": [
     "Rise Vision"
   ],
@@ -30,17 +30,17 @@
     "angular": "~1.3.0",
     "angular-bootstrap": "~0.11.1",
     "angular-bootstrap-slider": "~0.0.6",
-    "rv-angular-bootstrap-colorpicker": "https://github.com/porcupine-plan/angular-bootstrap-colorpicker.git",
-    "rv-common-style": "https://github.com/porcupine-plan/common-style.git",
-    "component-storage-selector": "https://github.com/porcupine-plan/component-storage-selector.git#3.0.8",
+    "rv-angular-bootstrap-colorpicker": "https://github.com/eyeconictv/angular-bootstrap-colorpicker.git",
+    "rv-common-style": "https://github.com/eyeconictv/common-style.git",
+    "component-storage-selector": "https://github.com/eyeconictv/component-storage-selector.git#3.0.19",
     "bootstrap-sass-official": "~3.2.0",
-    "bootstrap-form-components": "https://github.com/porcupine-plan/bootstrap-form-components.git",
-    "spectrum": "https://github.com/porcupine-plan/spectrum.git",
-    "rv-common-i18n": "https://github.com/porcupine-plan/common-i18n.git"
+    "bootstrap-form-components": "https://github.com/eyeconictv/bootstrap-form-components.git",
+    "spectrum": "https://github.com/eyeconictv/spectrum.git",
+    "rv-common-i18n": "https://github.com/eyeconictv/common-i18n.git"
   },
   "resolutions": {
     "angular": "~1.3.0",
-    "rv-common-style": "1.2.3",
+    "rv-common-style": "3.2.3",
     "jquery": "1.11.0",
     "angular-bootstrap": "^0.13.0",
     "angular-translate-loader-static-files": "~2.18.1",
