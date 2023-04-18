@@ -14,7 +14,7 @@
   var es = require("event-stream");
   var jshint = require("gulp-jshint");
   var uglify = require("gulp-uglify");
-  var factory = require("widget-tester").gulpTaskFactory;
+  // var factory = require("widget-tester").gulpTaskFactory;
   var bower = require("gulp-bower");
   var del = require("del");
   var colors = require("colors");
@@ -132,17 +132,17 @@
       .pipe(gulp.dest("dist/js"));
   });
 
-  gulp.task("webdriver_update", factory.webdriveUpdate());
+  // gulp.task("webdriver_update", factory.webdriveUpdate());
 
   // ***** e2e Testing ***** //
 
-  gulp.task("e2e:server", ["config"], factory.testServer());
-  gulp.task("e2e:server-close", factory.testServerClose());
+  // gulp.task("e2e:server", ["config"], factory.testServer());
+  // gulp.task("e2e:server-close", factory.testServerClose());
 
-  gulp.task("e2e:test", factory.testE2E());
-  gulp.task("e2e:test-ng", ["webdriver_update"], factory.testE2EAngular({
-    src: ["test/e2e/angular/*test-ng.js"]
-  }));
+  // gulp.task("e2e:test", factory.testE2E());
+  // gulp.task("e2e:test-ng", ["webdriver_update"], factory.testE2EAngular({
+  //   src: ["test/e2e/angular/*test-ng.js"]
+  // }));
 
   // ***** Primary Tasks ***** //
   gulp.task("bower-clean-install", ["clean-bower"], function(cb){
@@ -153,25 +153,25 @@
   });
 
   // ****** Unit Testing ***** //
-  gulp.task("test:unit", factory.testUnitAngular(
-    {testFiles: [
-      "components/angular/angular.js",
-      "components/angular-mocks/angular-mocks.js",
-      "components/angular-sanitize/angular-sanitize.js",
-      "components/angular-bootstrap/ui-bootstrap-tpls.js",
-      "components/jquery/dist/jquery.js",
-      "components/angular-translate/angular-translate.js",
-      "components/angular-translate-loader-static-files/angular-translate-loader-static-files.js",
-      "components/rv-common-i18n/dist/i18n.js",
-      "node_modules/widget-tester/mocks/i18n-config.js",
-      "components/component-storage-selector/dist/storage-selector.js",
-      "components/component-subscription-status/dist/js/subscription-status.js",
-      "dist/js/angular/tooltip.js",
-      "dist/js/angular/url-field.js",
-      "dist/js/angular/file-selector.js",
-      "test/mock/subscription-svc-http-mock.js",
-      "test/unit/**/*spec.js"]}
-  ));
+  // gulp.task("test:unit", factory.testUnitAngular(
+  //   {testFiles: [
+  //     "components/angular/angular.js",
+  //     "components/angular-mocks/angular-mocks.js",
+  //     "components/angular-sanitize/angular-sanitize.js",
+  //     "components/angular-bootstrap/ui-bootstrap-tpls.js",
+  //     "components/jquery/dist/jquery.js",
+  //     "components/angular-translate/angular-translate.js",
+  //     "components/angular-translate-loader-static-files/angular-translate-loader-static-files.js",
+  //     "components/rv-common-i18n/dist/i18n.js",
+  //     "node_modules/widget-tester/mocks/i18n-config.js",
+  //     "components/component-storage-selector/dist/storage-selector.js",
+  //     "components/component-subscription-status/dist/js/subscription-status.js",
+  //     "dist/js/angular/tooltip.js",
+  //     "dist/js/angular/url-field.js",
+  //     "dist/js/angular/file-selector.js",
+  //     "test/mock/subscription-svc-http-mock.js",
+  //     "test/unit/**/*spec.js"]}
+  // ));
 
   gulp.task("test", function(cb) {
     runSequence("build", "test:unit", "e2e:server", "e2e:test", "e2e:test-ng", "e2e:server-close", cb);
@@ -181,51 +181,51 @@
     runSequence(["clean", "config"], ["js-uglify"], cb);
   });
 
-  gulp.task("demo:server", ["build-demo"], factory.testServer({
-    rootPath: "./dist-demos"
-  }));
+  // gulp.task("demo:server", ["build-demo"], factory.testServer({
+  //   rootPath: "./dist-demos"
+  // }));
 
-  gulp.task("build-demo", function (cb) {
-    runSequence("copy-pages-to-demo-dist", "copy-dist-to-demo-dist", "copy-components-to-demo-dist", "copy-mocks-to-demo-dist", cb);
-  });
+  // gulp.task("build-demo", function (cb) {
+  //   runSequence("copy-pages-to-demo-dist", "copy-dist-to-demo-dist", "copy-components-to-demo-dist", "copy-mocks-to-demo-dist", cb);
+  // });
 
-  gulp.task("copy-pages-to-demo-dist", function() {
-    return gulp.src(["./demos/*.html"])
-      .pipe(gulp.dest("./dist-demos"));
-  });
+  // gulp.task("copy-pages-to-demo-dist", function() {
+  //   return gulp.src(["./demos/*.html"])
+  //     .pipe(gulp.dest("./dist-demos"));
+  // });
 
-  gulp.task("copy-dist-to-demo-dist", function() {
-    return gulp.src(["./dist/**"])
-      .pipe(gulp.dest("./dist-demos/dist"));
-  });
+  // gulp.task("copy-dist-to-demo-dist", function() {
+  //   return gulp.src(["./dist/**"])
+  //     .pipe(gulp.dest("./dist-demos/dist"));
+  // });
 
-  gulp.task("copy-components-to-demo-dist", function() {
-    return gulp.src(["./components/**"])
-      .pipe(gulp.dest("./dist-demos/components"));
-  });
+  // gulp.task("copy-components-to-demo-dist", function() {
+  //   return gulp.src(["./components/**"])
+  //     .pipe(gulp.dest("./dist-demos/components"));
+  // });
 
-  gulp.task("copy-mocks-to-demo-dist", function() {
-    return gulp.src(["./demos/mocks/**"])
-      .pipe(gulp.dest("./dist-demos/mocks"));
-  });
+  // gulp.task("copy-mocks-to-demo-dist", function() {
+  //   return gulp.src(["./demos/mocks/**"])
+  //     .pipe(gulp.dest("./dist-demos/mocks"));
+  // });
 
   /**
    *  Deploy to gh-pages
    */
-  gulp.task("deploy-demo", function () {
+  // gulp.task("deploy-demo", function () {
 
-    // Remove temp folder created by gulp-gh-pages
-    if (argv.clean) {
-      var os = require('os');
-      var path = require('path');
-      var repoPath = path.join(os.tmpdir(), 'tmpRepo');
-      gutil.log('Delete ' + gutil.colors.magenta(repoPath));
-      del.sync(repoPath, {force: true});
-    }
+  //   // Remove temp folder created by gulp-gh-pages
+  //   if (argv.clean) {
+  //     var os = require('os');
+  //     var path = require('path');
+  //     var repoPath = path.join(os.tmpdir(), 'tmpRepo');
+  //     gutil.log('Delete ' + gutil.colors.magenta(repoPath));
+  //     del.sync(repoPath, {force: true});
+  //   }
 
-    return gulp.src("./dist-demos/**/*")
-      .pipe(deploy("https://github.com/Rise-Vision/widget-settings-ui-components.git"));
-  });
+  //   return gulp.src("./dist-demos/**/*")
+  //     .pipe(deploy("https://github.com/Rise-Vision/widget-settings-ui-components.git"));
+  // });
 
   gulp.task("default", [], function() {
     console.log("********************************************************************".yellow);

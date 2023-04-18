@@ -1,13 +1,13 @@
 {
   "name": "widget-settings-ui-components",
   "version": "3.3.0",
-  "homepage": "https://github.com/Rise-Vision/widget-settings-ui-components",
+  "homepage": "https://github.com/eyeconictv/widget-settings-ui-components",
   "authors": [
     "Rise Vision"
   ],
   "description": "Common components shared across Rise Vision widget settings UI",
   "keywords": [
-    "rise-vision",
+    "eyeconictv",
     "settings",
     "widget",
     "ui",
@@ -34,14 +34,14 @@
     "angular-sanitize": "~1.3.0",
     "angular-ui-router": "0.2.15",
     "angular-ui-tinymce": "0.0.18",
-    "bootstrap-form-components": "https://github.com/Rise-Vision/bootstrap-form-components.git",
+    "bootstrap-form-components": "https://github.com/eyeconictv/bootstrap-form-components.git",
     "bootstrap-sass-official": "~3.2.0",
-    "component-storage-selector": "https://github.com/Rise-Vision/component-storage-selector.git",
-    "component-subscription-status": "https://github.com/Rise-Vision/component-subscription-status.git",
-    "rv-angular-bootstrap-colorpicker": "https://github.com/Rise-Vision/angular-bootstrap-colorpicker.git",
-    "rv-common-i18n": "https://github.com/Rise-Vision/common-i18n.git",
-    "rv-common-style": "https://github.com/Rise-Vision/common-style.git",
-    "spectrum": "https://github.com/Rise-Vision/spectrum.git"
+    "component-storage-selector": "https://github.com/eyeconictv/component-storage-selector.git",
+    "component-subscription-status": "https://github.com/eyeconictv/component-subscription-status.git",
+    "rv-angular-bootstrap-colorpicker": "https://github.com/eyeconictv/angular-bootstrap-colorpicker.git",
+    "rv-common-i18n": "https://github.com/eyeconictv/common-i18n.git",
+    "rv-common-style": "https://github.com/eyeconictv/common-style.git",
+    "spectrum": "https://github.com/eyeconictv/spectrum.git"
   },
   "resolutions": {
     "angular": "~1.4.0",
