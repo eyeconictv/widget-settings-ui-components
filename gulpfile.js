@@ -19,7 +19,7 @@
   var es = require("event-stream");
   var jshint = require("gulp-jshint");
   var uglify = require("gulp-uglify");
-  var factory = require("widget-tester").gulpTaskFactory;
+  // var factory = require("widget-tester").gulpTaskFactory;
 
   var subcomponents = fs.readdirSync("src")
     .filter(function(file) {
@@ -175,17 +175,17 @@
     runSequence(["clean", "config"], ["js-uglify", "css-min"], cb);
   });
 
-  gulp.task("webdriver_update", factory.webdriveUpdate());
+  // gulp.task("webdriver_update", factory.webdriveUpdate());
 
-  gulp.task("e2e:server", ["config"], factory.testServer());
-  gulp.task("e2e:server-close", factory.testServerClose());
+  // gulp.task("e2e:server", ["config"], factory.testServer());
+  // gulp.task("e2e:server-close", factory.testServerClose());
 
-  gulp.task("e2e:test", factory.testE2E());
-  gulp.task("e2e:test-ng", ["webdriver_update"], factory.testE2EAngular({
-    src: ["test/e2e/angular/*test-ng.js"]
-  }));
+  // gulp.task("e2e:test", factory.testE2E());
+  // gulp.task("e2e:test-ng", ["webdriver_update"], factory.testE2EAngular({
+  //   src: ["test/e2e/angular/*test-ng.js"]
+  // }));
 
-  gulp.task("test:metrics", factory.metrics());
+  // gulp.task("test:metrics", factory.metrics());
 
   gulp.task("test", function(cb) {
     runSequence("build", "e2e:server", "e2e:test", "e2e:test-ng", "e2e:server-close", "test:metrics", cb);
